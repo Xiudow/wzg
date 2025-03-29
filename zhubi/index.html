@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猪b</title>
+    <link rel="icon" type="text/x-icon" href="./R-C.ico" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "icomoon";
+      src: url("fonts/icomoon.eot?2oi622");
+      src: url("fonts/icomoon.eot?2oi622#iefix") format("embedded-opentype"),
+        url("fonts/icomoon.ttf?2oi622") format("truetype"),
+        url("fonts/icomoon.woff?2oi622") format("woff"),
+        url("fonts/icomoon.svg?2oi622#icomoon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    .clearfix:after {
+      visibility: hidden;
+      clear: both;
+      display: block;
+      content: ".";
+      height: 0;
+    }
+    .w {
+      width: 95%;
+      margin: 0 auto;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      color: pink;
+      text-decoration: none;
+    }
+    .shortcut {
+      background: #00010c;
+      height: 30px;
+      color: rgb(255, 102, 127);
+    }
+    p {
+      text-align: center;
+      line-height: 30px;
+      font-size: 12px;
+    }
+    .nav {
+      background: linear-gradient(rgb(249, 168, 180), rgb(255, 102, 127));
+      height: 100px;
+    }
+    .logo {
+      float: left;
+      font-size: 0;
+      width: 130px;
+      height: 100px;
+    }
+    .logo a {
+      display: block;
+      width: 130;
+      height: 100px;
+      background: url(./images/logo2.png) no-repeat center;
+    }
+    .anniu {
+      position: relative;
+      display: block;
+      float: right;
+      width: 130px;
+      height: 80px;
+      background: linear-gradient(rgb(247, 144, 159), rgb(253, 77, 106));
+      border: 1px solid #714d4d;
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: inset 0 5px 1px rgba(99, 76, 76, 0.35),
+        0 5px 5px rgba(0, 0, 0, 0.5), 0 15px 25px rgba(0, 0, 0, 0.35);
+    }
+    .anniu::before {
+      content: "";
+      position: absolute;
+      inset: 5px 4px;
+      border-top: 3px solid #ffffff;
+      filter: blur(3px);
+    }
+    .anniu:active {
+      box-shadow: inset 0 2px 2px rgba(99, 76, 76, 0.35),
+        inset 0 5px 5px rgba(0, 0, 0, 0.5),
+        inset 0 15px 25px rgba(0, 0, 0, 0.35);
+    }
+    .header {
+      height: 65px;
+      border-bottom: 1px solid #eae9e9;
+    }
+    .header .w ul {
+      display: flex;
+      justify-content: space-between;
+      line-height: 65px;
+    }
+    .header .w ul li {
+      color: rgb(177, 9, 37);
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .banner {
+      margin-top: 20px;
+    }
+    .banner img {
+      width: 100%;
+    }
+    .about {
+      margin-top: 20px;
+    }
+    .about .hd {
+      height: 65px;
+      background: rgb(249, 203, 210);
+      color: rgb(255, 102, 127);
+      line-height: 65px;
+      padding: 0 10px;
+    }
+    .about .bd ul li {
+      position: relative;
+    }
+    .about .bd ul li a {
+      display: block;
+      padding: 0 20px;
+      width: 390px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 45px;
+      line-height: 45px;
+      color: #969696;
+      border-bottom: 1px solid #eae9e9;
+    }
+    .about .bd ul li a::after {
+      position: absolute;
+      right: 20px;
+      content: "\eb3c";
+      font-family: "icomoon";
+    }
+    .box {
+      margin-top: 20px;
+    }
+    .box li {
+      float: left;
+      width: 49.3%;
+      margin-right: 5px;
+    }
+    .box li:nth-child(2n) {
+      margin-right: 0;
+    }
+    .box li img {
+      width: 100%;
+    }
+    footer {
+      margin-top: 20px;
+      height: 90px;
+      border-top: 1px solid #eae9e9;
+    }
+    footer .w p {
+      font-size: 12px;
+      color: #969696;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="shortcut">
+      <a href="#"><p>手机版</p> </a>
+    </div>
+    <div class="nav">
+      <div class="w">
+        <div class="logo">
+          <h1><a href="./index.html">猪b</a></h1>
+        </div>
+        <button id="anniu" class="anniu">点击此处</button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="w">
+        <ul>
+          <li>猪b</li>
+          <li>猪斌</li>
+          <li>猪编</li>
+          <li>猪彪</li>
+          <li>猪奔</li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="./images/banner.jpg" alt="" />
+    </div>
+    <div class="about">
+      <div class="hd">
+        <h1>其他</h1>
+      </div>
+      <div class="bd">
+        <ul>
+          <li><a href="./shuaping.html">一大堆猪b</a></li>
+          <li>
+            <a href="./explan for zhub.html"
+              >当猪B成为艺术：流量社会的精神分析及元宇宙祛魅</a
+            >
+          </li>
+          <li>
+            <a href="./explan for zhubin .html">关于「猪斌」的权威百科介绍</a>
+          </li>
+          <li>
+            <a href="./zhubinlunwen.html"
+              >《论“猪斌”现象的跨维度物理模型及其在信息宇宙中的熵变机制》</a
+            >
+          </li>
+          <li>
+            <a href="./zhubiao.html"
+              >《猪彪现象的存在主义批判与后现代主体性解构》</a
+            >
+          </li>
+          <li>
+            <a href="./aidekaoyanyvchongsheng.html"
+              >短篇小说《爱的考验与重生》</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="box w clearfix">
+      <ul>
+        <li><img src="./images/创作超现实作品 (1).png" alt="" /></li>
+        <li><img src="./images/创作超现实作品 (2).png" alt="" /></li>
+        <li><img src="./images/创作超现实作品 (3).png" alt="" /></li>
+        <li><img src="./images/创作超现实作品 (4).png" alt="" /></li>
+      </ul>
+    </div>
+    <footer>
+      <div class="w">
+        <p>猪鼻死了 雄兴思乐 杨薇撕了</p>
+        <p>纯属娱乐</p>
+        <p>联系方式:zhubisilexiongxinsile</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("anniu").addEventListener("click", function () {
+      alert("猪鼻死了 雄兴思乐 杨薇撕了");
+    });
+  </script>
+</html>
